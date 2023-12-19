@@ -27,3 +27,16 @@
 .main-container {
     background-color: #f9c8c1;
 }
+
+#icon-row img {
+    min-height: 200px;
+}
+
+.circle {
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: pink;
+    margin-right: -10rem;
+}

@@ -1,40 +1,105 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<div class="container flex justify-end mx-auto content-end pt-72 gap-8">
+{% extends 'base.html' %} {% block content %}
+<div class="container flex justify-end mx-auto pt-72 gap-8">
     <div class="flex flex-col items-center basis-2/3">
         <div class="flex flex-col gap-y-6">
             <h1 class="text-6xl font-extrabold">
-                LEIA <br>
-                OMA <br class="my-3">
+                LEIA <br />
+                OMA <br class="my-3" />
                 LEMMIK
             </h1>
             <p>
-                Oleme sellele kokku kagunud internetist leitud <br>
+                Oleme sellele kokku kagunud internetist leitud <br />
                 maitsvad retsepte
             </p>
-            <button type="button" class="text-white self-start bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Vaata lähemalt</button>
+            <button type="button"
+                class="text-white self-start bg-black hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                Vaata lähemalt
+            </button>
         </div>
     </div>
-    <img class="basis-1/3" src="{{url_for('static', filename='images/muffins.png')}}" alt="" width="550">
+    <img class="basis-1/3" src="{{url_for('static', filename='images/muffins.png')}}" alt="" width="550" />
+    <div class="custom-shape-divider-bottom-1700003160 self-end">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
 </div>
-<div class="custom-shape-divider-bottom-1700003160">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="icon-row" class="container mx-auto flex justify-between items-start">
+    <div class="flex flex-col items-center">
+        <img class="rounded-full bg-gray-200" src="{{url_for('static', filename='images/cupcake-icon.png')}}" alt="" width="200" height="200" />
+        <h2 class="font-bold mt-5">MAGUSTOIDUD</h2>
+        <p class="mt-2">Siit leiate magustoitude, tortide ja <br>
+            erinevate küpsetiste retsepte</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <img class="rounded-full bg-gray-200" src="{{url_for('static', filename='images/soup-bowl-icon.png')}}" alt="" width="200" height="200" />
+        <h2 class="font-bold mt-5">SUPID</h2>
+        <p class="mt-2">Siia on kogutud suppide retseptide</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <img class="rounded-full bg-gray-200" src="{{url_for('static', filename='images/salad-bowl-icon.png')}}" alt="" width="200" height="200" />
+        <h2 class="font-bold mt-5">SALATID</h2>
+        <p class="mt-2">Siit leiate värskete kui tavaliste salatite retsepte</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <img class="rounded-full bg-gray-200" src="{{url_for('static', filename='images/steak-icon.png')}}" alt="" width="200" height="200" />
+        <h2 class="font-bold mt-5">SOOLANE TOIT</h2>
+        <p class="mt-2">Maitsvate soolaste toitude retseptide leiate siit</p>
+    </div>
 </div>
-
-<div>
+<br>
+<div class="flex mt-40">
+    <div class="flex basis-1/2 justify-end">
+        <div class="flex flex-col items-start">
+            <h2 class="text-6xl font-extrabold">
+                KUIDAS SE <br class="mb-5">
+                TÖÖTAB?
+            </h2>
+            <p class="mt-3">Lae oma retsept üles kolme lihtsa sammuga</p>
+            <div class="list-row flex items-center mt-10">
+                <img class="rounded-full bg-gray-200 p-3" src="{{url_for('static', filename='images/cookbook-icon.png')}}" alt="" width="100" height="100">
+                <p class="ml-5">Leia retsept, mida soovid meiega jaganda</p>
+            </div>
+            <div class="list-row flex items-center mt-4">
+                <img class="rounded-full bg-gray-200 p-3" src="{{url_for('static', filename='images/cookbook-icon.png')}}" alt="" width="100" height="100">
+                <p class="ml-5">Täida allpool ära retsepti kirjeldus</p>
+            </div>
+            <div class="list-row flex items-center mt-4">
+                <img class="rounded-full bg-gray-200 p-3" src="{{url_for('static', filename='images/cookbook-icon.png')}}" alt="" width="100" height="100">
+                <p class="ml-5">Oota kuni me retsepti heaks kiidame ning lehele lisame</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex basis-1/2 justify-end overflow-hidden">
+        <div class="circle">
+            <h2 class="mt-20 text-6xl font-extrabold">
+                MÕNI HEA <br>
+                RETSEPT <br class="my-5">
+                PUUDU?
+            </h2>
+            <p class="mt-5">
+                Anna sellest meile teada tältes ära <br>
+                allpool olev küsitlus või lae oma <br>
+                retsept meie lehele ülesse kolme lihtsa sammuga
+            </p>
+        </div>
+    </div>
+</div>
+<!-- <div>
     <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" class="z-50">
         <g>
          <title>Layer 1</title>
          <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="240" x2="300" y1="178" x1="300" stroke="#000" fill="none"/>
          <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="240" x2="350" y1="178" x1="350" stroke="#000" fill="none"/>
          <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="179" x2="351" y1="179" x1="300" stroke="#000" fill="none"/>
-         <text transform="rotate(-90, 323.639, 229.857)" xml:space="preserve" text-anchor="start" font-family="'Antonio'" font-size="16" stroke-width="0" id="svg_5" y="237.95239" x="293.2381" stroke="#000" fill="#000000">KERI   ALLA</text>
+        <text transform="rotate(-90, 323.639, 229.857)" xml:space="preserve" text-anchor="start" font-family="'Antonio'"
+            font-size="16" stroke-width="0" id="svg_5" y="237.95239" x="293.2381" stroke="#000" fill="#000000">KERI ALLA</text>
          <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="338.57125" x2="326.19033" y1="271.4284" x1="325.71414" stroke="#000" fill="none"/>
         </g>
        </svg>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div> -->
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 {% endblock %}
