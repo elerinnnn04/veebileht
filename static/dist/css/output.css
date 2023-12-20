@@ -1598,6 +1598,10 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1816,6 +1820,21 @@ p {
   top: -25%;
   left: -100%;
   background: radial-gradient(ellipse at center, rgb(186, 186, 186) 0%,rgb(186, 186, 186) 50%,white 50%,white 100%);
+  z-index: 2;
+}
+
+#kusitlus div {
+  z-index: 20;
+}
+
+#kusitlus:before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -25%;
+  left: -100%;
+  background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(186, 186, 186) 30%,rgb(186, 186, 186) 100%);
   z-index: 2;
 }
 
