@@ -23,7 +23,6 @@
     fill: white;
 }
 
-
 .main-container {
     background-color: #f9c8c1;
 }
@@ -39,4 +38,31 @@
     text-align: center;
     background-color: pink;
     margin-right: -10rem;
+}
+
+p {
+    font-family: "Chalkboard";
+}
+
+.crown {
+    top: -245px;
+    transform: rotate(-20deg);
+    left: -70px;
+    width: 400px;
+    z-index: 9999;
+}
+
+#kuulemmik div {
+    z-index: 20;
+}
+
+#kuulemmik::before {
+    content: "";
+	position: absolute;
+	width: 300%;
+	height: 300%;
+	top: -25%;
+	left: -100%;
+	background: radial-gradient(ellipse at center, rgb(186, 186, 186) 0%,rgb(186, 186, 186) 50%,white 50%,white 100%);
+    z-index: 2;
 }

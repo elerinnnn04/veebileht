@@ -1178,6 +1178,10 @@ input:checked + .toggle-bg {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1192,10 +1196,6 @@ input:checked + .toggle-bg {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -1517,6 +1517,11 @@ input:checked + .toggle-bg {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1785,6 +1790,33 @@ input:checked + .toggle-bg {
   text-align: center;
   background-color: pink;
   margin-right: -10rem;
+}
+
+p {
+  font-family: "Chalkboard";
+}
+
+.crown {
+  top: -245px;
+  transform: rotate(-20deg);
+  left: -70px;
+  width: 400px;
+  z-index: 9999;
+}
+
+#kuulemmik div {
+  z-index: 20;
+}
+
+#kuulemmik::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -25%;
+  left: -100%;
+  background: radial-gradient(ellipse at center, rgb(186, 186, 186) 0%,rgb(186, 186, 186) 50%,white 50%,white 100%);
+  z-index: 2;
 }
 
 .hover\:border-gray-300:hover {
