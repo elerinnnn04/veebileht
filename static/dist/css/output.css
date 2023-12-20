@@ -1517,11 +1517,6 @@ input:checked + .toggle-bg {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1596,10 +1591,6 @@ input:checked + .toggle-bg {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .pt-2 {
@@ -1808,6 +1799,10 @@ p {
   z-index: 9999;
 }
 
+#kuulemmik {
+  background: rgb(229, 231, 235);
+}
+
 #kuulemmik div {
   z-index: 20;
 }
@@ -1819,12 +1814,13 @@ p {
   height: 300%;
   top: -25%;
   left: -100%;
-  background: radial-gradient(ellipse at center, rgb(186, 186, 186) 0%,rgb(186, 186, 186) 50%,white 50%,white 100%);
+  background: radial-gradient(ellipse at center, rgb(229, 231, 235) 0%,rgb(229, 231, 235) 50%,white 50%,white 100%);
   z-index: 2;
 }
 
 #kusitlus div {
   z-index: 20;
+  padding-top: 20px;
 }
 
 #kusitlus:before {
@@ -1832,10 +1828,10 @@ p {
   position: absolute;
   width: 300%;
   height: 300%;
-  top: -25%;
+  top: -70%;
   left: -100%;
-  background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(186, 186, 186) 30%,rgb(186, 186, 186) 100%);
-  z-index: 2;
+  background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(229, 231, 235) 30%,rgb(229, 231, 235) 100%);
+  z-index: -1;
 }
 
 .hover\:border-gray-300:hover {

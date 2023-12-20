@@ -52,6 +52,10 @@ p {
     z-index: 9999;
 }
 
+#kuulemmik {
+    background: rgb(229, 231, 235);
+}
+
 #kuulemmik div {
     z-index: 20;
 }
@@ -63,12 +67,13 @@ p {
 	height: 300%;
 	top: -25%;
 	left: -100%;
-	background: radial-gradient(ellipse at center, rgb(186, 186, 186) 0%,rgb(186, 186, 186) 50%,white 50%,white 100%);
+	background: radial-gradient(ellipse at center, rgb(229, 231, 235) 0%,rgb(229, 231, 235) 50%,white 50%,white 100%);
     z-index: 2;
 }
 
 #kusitlus div {
     z-index: 20;
+    padding-top: 20px;
 }
 
 #kusitlus:before {
@@ -76,8 +81,8 @@ p {
 	position: absolute;
 	width: 300%;
 	height: 300%;
-	top: -25%;
+	top: -70%;
 	left: -100%;
-	background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(186, 186, 186) 30%,rgb(186, 186, 186) 100%);
-    z-index: 2;
+	background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(229, 231, 235) 30%,rgb(229, 231, 235) 100%);
+    z-index: -1;
 }
