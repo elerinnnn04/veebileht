@@ -86,3 +86,8 @@ p {
 	background: radial-gradient(ellipse at center, white 0%,white 30%,rgb(229, 231, 235) 30%,rgb(229, 231, 235) 100%);
     z-index: -1;
 }
+
+#form button {
+    background-color: #f9c8c1;
+    width: 100%;
+}
